@@ -1,0 +1,138 @@
+* {
+    box-sizing:content-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+
+main {
+    background-color: hsl(233, 47%, 7%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 1080px;
+    height: 446px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#info {
+    padding: 80px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+#img {
+    width: 100%;
+    height: inherit;
+    border-radius: 0 10px 10px 0;
+    background:linear-gradient(180deg, rgba(170, 92, 219, 1) 100%, rgba(255, 255, 255, 0) 100%), url(images/image-header-desktop.jpg);
+    background-blend-mode: multiply;
+}
+
+#statistics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 4rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-top: 0.5rem;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution {
+    color: white;
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        height: fit-content;
+    }
+
+    #card {
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 20px;
+    }
+
+    #info {
+        padding: 40px 50px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    p {
+        font-weight: 400;
+        margin-top: 1.5rem;
+    }
+
+    #img {
+        height: 30vh;
+        border-radius: 10px 10px 0 0;
+        background:linear-gradient(180deg, rgba(170, 92, 219, 1) 100%, rgba(255, 255, 255, 0) 100%), url(images/image-header-mobile.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    #statistics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+
+    .attribution {
+        color: white;
+        margin-bottom: 30px;
+    }
+}
+    
